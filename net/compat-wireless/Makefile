@@ -55,7 +55,7 @@ obj-$(CONFIG_COMPAT_BLUETOOTH_MODULES) += drivers/bluetooth/
 
 else
 
-export PWD :=	$(shell pwd)
+export PWD :=	$(BUILD_ROOT)/kernel/sony/u8500/net/compat-wireless
 CFLAGS += \
         -DCOMPAT_BASE_TREE="\"$(shell cat compat_base_tree)\"" \
         -DCOMPAT_BASE_TREE_VERSION="\"$(shell cat compat_base_tree_version)\"" \
